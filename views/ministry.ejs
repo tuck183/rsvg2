@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Government of Rivers State</title> 
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/img-icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/img-icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/img-icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/img-icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/img-icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/img-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/img-icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/img-icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/img-icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/img-icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/img-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/img-icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/img-icon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="img/img-icon/ms-icon-144x144.png">
+
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700i,700|Poppins:800" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/modifications.css" rel="stylesheet" media="screen">
+<link href="css/xl.css" rel="stylesheet" media="screen">
+</head>
+<body>
+  
+    <!-- Loader -->
+
+    
+
+    
+    <%- include includes/header %>
+  <!-- Layout -->
+
+  <div class="layout">
+    
+    <!-- Home -->
+    <style type="text/css">
+      .highlight{
+        color:rgb(0,177,230);
+        font-family: 'Poppins';
+        font-size: 0.95em;
+        margin:0px;
+      }
+      
+      .expand{
+        cursor: pointer;
+      }
+      
+      .caption{
+        font-weight: bold;
+      }
+    </style>
+    <section class="section" style="background: rgb(230,230,230); margin-bottom:0px; ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-lg-2">
+          </div>
+          <div class="col-lg-10 col-md-10">
+            <h3>Ministry of <%- ministry.ministry %></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-lg-2">
+            
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-2">
+            <br>
+            <img src="<%- commissioner?commissioner.images[0]:'' %>" class="img-responsive">
+          </div>
+          <div class="col-md-7 col-lg-7 col-xl-5">
+            <h4 style="font-size: 1.5em; margin-bottom:0px;"><%- commissioner?commissioner.name:'' %></h4>
+            <h4 class="highlight">Executive Head</h4>
+            <p><%- ministry.about %></p>
+          </div>
+        </div>
+        <div class="row" style="margin-top:2%;">
+          <div class="col-lg-2 col-md-2 col-sm-2"></div>
+          <div class="col-lg-10 col-md-10 col-sm-10">
+            <div class="row">
+            <% for(var i = 0; i < directors.length; i++) { %>
+              <div class="col-lg-3 col-md-3 col-xs-6 col-sm-3 col-xl-2">
+                <img src="<%- directors[i]['image_url'] %>" class="img-responsive">
+                <h4 style=" margin-bottom:0px;"><%- directors[i]['name'] %></h4>
+                <h4 class="highlight"><%- directors[i]['designation'] %></h4>
+              </div>
+            <% } %>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:2%;">
+          <div class="col-lg-2 col-md-2"></div>
+          <div class="col-lg-10 col-md-10 col-xl-8">
+            <h3>About The Ministry of <%- ministry.ministry %></h3>
+            <p><%- ministry.about %></p>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-md-2 col-lg-2">
+            
+          </div>
+          <div class="col-md-5 col-lg-5 col-xl-4">
+            <h3 class="caption">VISION</h3>
+            <p class="statement"><%- ministry.vision %></p>
+          </div>
+           <div class="col-md-5 col-lg-5 col-xl-4">
+            <h3 class="caption">MISSION</h3>
+            <p class="statement">
+              <%- ministry.mission %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-10 col-md-10 col-sm-10">
+          <div class="row parallax" style="background-image: <%- ministry.images[0] %>;" >
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin:2% auto;">
+        <div class="row">
+          <div class="col-md-2 col-lg-2"></div>
+          <div class="col-md-5 col-lg-5"> <h4>OBJECTIVES</h4></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-md-2"></div>
+          <div class="col-lg-5 col-md-5 col-xl-4">
+            <% for(var i = 0; i < Math.round(objectives.length/2); i++) {%>
+              <div class="row">
+                <div class="col-lg-1 col-xs-2 col-sm-1 col-md-1">
+                  <h4><i class="fa fa-2x fa-plus-circle expand" data-info="iden"></i></h4>
+                </div>
+                <div class="col-lg-11 col-xs-10 col-sm-11 col-md-11">
+                  <h4 class="headline"><%- objectives[i]['objective'] %></h4>
+                  <p id="iden" style="display:none;">
+                    <%- objectives[i]['description'] %>
+                  </p>
+                </div>
+              </div>
+            <% } %>
+          </div>
+          <div class="col-lg-5 col-md-5 col-xl-4">
+            <% for(var i = Math.round(objectives.length/2); i < objectives.length; i++) {%>
+              <div class="row">
+                <div class="col-lg-1 col-xs-2 col-sm-1 col-md-1">
+                  <h4><i class="fa fa-2x fa-plus-circle expand" data-info="iden"></i></h4>
+                </div>
+                <div class="col-lg-11 col-xs-10 col-sm-11 col-md-11">
+                  <h4 class="headline"><%- objectives[i]['objective'] %></h4>
+                  <p id="iden" style="display:none;">
+                    <%- objectives[i]['description'] %>
+                  </p>
+                </div>
+              </div>
+            <% } %>
+          </div>
+          </div>
+        </div>
+
+      <!-- IMAGE OF MAN WATERING PLANT -->
+      <style type="text/css">
+        .parallax { 
+            /* The image used */
+            background-image: url("<%- ministry.images[1] %>");
+
+            /* Set a specific height */
+            height: 40vh; 
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+      </style>
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        <div class="col-lg-10 col-md-10 col-sm-10">
+          <div class="row parallax" >
+          </div>
+        </div>
+      </div>
+      <style type="text/css">
+        .mdas h3{
+          color:white;
+          font-family: 'Poppins';
+        }
+        .headline{
+          color:rgb(179,179,179);
+          font-family: 'Karla', sans-serif;
+        }
+        .mdas p {
+          margin-bottom:3px;
+           color:white;
+          font-family: 'Karla';
+        }
+      </style>
+      <div class="container mdas" style="background: rgb(179,179,179); z-index: 1000; width: 100%; padding-bottom:2%; " >
+        <div class="row mdas" >
+          <div class="col-lg-2 col-sm-2 col-md-2"></div>
+          <div class="col-lg-5 col-sm-5 col-md-5 col-xl-4 ">
+            <h3 >DEPARTMENTS</h3>
+            <% for(var i = 0; i < departments.length; i++) {%>
+              <p><%- departments[i]["name"] %></p>
+            <% } %>
+          </div>
+          <div class="col-lg-5 col-sm-5 col-md-5 col-xl-4 " style="margin-bottom: 3%;">
+            <h3>AFFILIATED AGENCIES</h3>
+            <% for(var i = 0; i < agencies.length; i++) {%>
+              <p><%- agencies[i]["name"] %></p>
+            <% } %>
+          </div>
+        </div>
+        <div class="row " style="margin:0px;">
+          <div class="col-lg-7 col-md-7 col-xl-6"></div>
+          <div class="col-lg-5 col-md-5 col-xl-6 ">
+            <p style=" font-size:18px;">For more information, visit: <a href="<%- ministry.url %>"><%- ministry.ministry.toLowerCase() %>.rvsg.gov.ng </a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    <%- include includes/footer %>
+  </div>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/interface.js"></script> 
+
+<script type="text/javascript">
+  var expandicons = document.getElementsByClassName('expand');
+  for (var i = 0; i < expandicons.length; i++){
+    expandicons[i].addEventListener('click',function(e){
+      var description = document.getElementById(e.target.dataset.info);
+      if(description.style.display != 'none'){
+        description.style.display = 'none';
+        var iconClassNames = e.target.className;
+        var newIconClassNames = iconClassNames.replace('fa-minus-circle','fa-plus-circle')
+        e.target.className = newIconClassNames;
+        e.target.style.color = 'rgb(17,68,168)';
+      }
+      else{
+        description.style.display = 'block';
+        var iconClassNames = e.target.className;
+        var newIconClassNames = iconClassNames.replace('fa-plus-circle','fa-minus-circle')
+        e.target.className = newIconClassNames;
+        e.target.style.color = 'rgb(0,177,230)';
+      }
+    })
+  }
+</script>
+</body>
+</html>

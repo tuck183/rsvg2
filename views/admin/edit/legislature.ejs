@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard - The Government of Rivers State</title> 
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/img-icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/img-icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/img-icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/img-icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/img-icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/img-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/img-icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/img-icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/img-icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/img-icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/img-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/img-icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/img-icon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="img/img-icon/ms-icon-144x144.png">
+
+<!-- Styles -->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="dashboard/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link href="dashboard/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+<link rel="stylesheet" href="dashboard/assets/libs/css/style.css">
+<link rel="stylesheet" href="dashboard/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    
+</head>
+<body>
+  
+    <%- include ../includes/header %>
+
+    
+  
+  <!-- Layout -->
+
+  <div class="layout">
+    
+    <!-- Home -->
+    
+    <main class="main">
+
+      <style type="text/css">
+        .submit-btn{
+          border-radius:0; 
+          outline:none; 
+          margin-top:20px; 
+          border:1px solid blue; 
+          color:blue;
+        }
+        .main{
+          padding-top:100px;
+        }
+      </style>
+      <div class="content">   
+      
+      <!-- projects -->
+      <div class="dashboard-wrapper">
+            <div class="dashboard-finance">
+                <div class="container-fluid dashboard-content">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h3 class="mb-2">Website Administrators' Dashboard </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                     
+                        <div class="container" >
+                          <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                              <div class="card">
+                                <h5 class="card-header">Legislator Information Update</h5>
+                                <div class="card-body">
+                                  <form action="/update/legislature" method="post">
+                                    <input type="hidden" name="id" value="<%- legislator._id %>">
+                                    <div class="form-group">
+                                        <label for="name" >Name of Legislator</label>
+                                        <br>
+                                        <input type="text" class="form-control" value="<%- legislator.name %>" name="name" id="name" placeholder="Please input the name of the speaker" />
+                                    </div>
+                                     <div class="form-group position" id="position">
+                                        <label for="position">Select position held</label>
+                                        <select class="form-control" name="position" id="position">
+                                            <option class="positions" value="none">None</option>
+                                            <option class="positions" value="Speaker">Speaker</option>
+                                            <option class="positions" value="Deputy Speaker">Deputy Speaker</option>
+                                            <option class="positions" value="Chief Whip">Chief Whip</option>
+                                            <option class="positions" value="Majority Leader">Majority Leader</option>
+                                            <option class="positions" value="Minority Leader">Minority Leader</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="constituency" >Constituency of legislator</label>
+                                        <br>
+                                        <input type="text" class="form-control" value="<%- legislator.constituency %>" name="constituency" id="constituency" placeholder="The constituency represented by him/her" />
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="profile">Profile of the legislator</label>
+                                      <textarea class="form-control" id="profile" name="profile" rows="10"><%- legislator.profile %></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="image" >Image URLs of the legislator</label>
+                                        <br>
+                                        <input type="text" class="form-control" value="<%- legislator.images.join(' , ') %>" name="image" id="image" placeholder="Put at least 4 that are comma-separated" />
+                                    </div>
+                                    <button type="submit" class="btn submit-btn btn-primary">Submit</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            Copyright © 2018. All rights reserved. Dashboard for Rivers State Government Website. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+     
+      
+      <!-- Footer -->
+      <style type="text/css">
+        .footer{
+          margin-top:0px;
+        }
+        .newsletter{
+          margin-bottom: 5%;
+        }
+      </style>
+
+      <div class="content">   
+      <!-- Footer -->
+        <footer id="footer" style="background: rgb(5,68,168); height:150px; margin-top:0px; margin-bottom:0px; " class="footer">   
+          <div class="container">
+            <div class=" row">
+              <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12  text-center" style="margin-top:50px;">
+                <p style="color:white;">COPYRIGHT © 2018 RIVERS STATE GOVERNMENT. ALL RIGHTS RESERVED.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+
+      <!-- Lines -->
+
+      
+    </div>
+    </main>
+
+    <!-- Blog List  -->
+    
+    
+  </div>
+
+<!-- SCRIPTS -->
+<% include ../includes/footer %>
+
+</body>
+</html>

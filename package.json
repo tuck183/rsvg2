@@ -1,0 +1,31 @@
+{
+  "name": "i_am_vocal",
+  "engines": {
+    "node": "6.9.5"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "aws-sdk": "^2.377.0",
+    "bluebird": "^3.5.3",
+    "body-parser": "~1.0.0",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.0.0",
+    "ejs": "~0.8.5",
+    "email-verifier": "^0.4.1",
+    "express": "~4.0.0",
+    "express-session": "~1.0.0",
+    "formidable": "^1.2.1",
+    "method-override": "~1.0.0",
+    "mongoose": "^4.13.17",
+    "morgan": "~1.0.0",
+    "nodemailer": "^2.7.2",
+    "npm": "^6.5.0",
+    "passport": "~0.1.17",
+    "passport-local": "~0.1.6",
+    "request": "^2.88.0",
+    "vhost": "^3.0.2"
+  }
+}

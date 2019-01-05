@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Government of Rivers State</title> 
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/img-icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/img-icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/img-icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/img-icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/img-icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/img-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/img-icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/img-icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/img-icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/img-icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/img-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/img-icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/img-icon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="img/img-icon/ms-icon-144x144.png">
+
+<!-- Styles -->
+
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700i,700|Poppins:800" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/modifications.css" rel="stylesheet" media="screen">
+<link href="css/xl.css" rel="stylesheet" media="screen">
+</head>
+<body>
+     <!-- Loader -->
+
+    
+    <!-- Header -->
+
+    
+    <%- include includes/header %>
+
+  <!-- Layout -->
+
+  <div class="layout">
+    <style type="text/css">
+      p, h2, h4, h5, h3{
+        margin:auto;
+        padding: auto;
+      }
+      .position{
+        font-family: 'Karla', sans-serif;
+        font-size:1em;
+        word-spacing: 0.1em;
+        font-weight: bold;
+      }
+      .grey{
+        color: #959595;
+      }
+      .names{
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: 18px;
+        margin-top:1%;
+        word-spacing: 0.2em;
+      }
+      .guard{
+        font-size:27px;
+        font-weight: bold;
+      }
+      img{
+        width:100% !important;
+      }
+    </style>
+    <!-- Home -->
+    <section class="section">
+      <div class="container">
+        <div class="row executiverow">
+          <div class="col-md-2 col-lg-2">
+            
+          </div>
+          <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4 ">
+            <img src="<%- legislators['Speaker']?legislators['Speaker']['images'][0]:'' %>" class="img-responsive">
+            <h3 class="guard">Rt. Hon. <%- legislators['Speaker']?legislators['Speaker']['name']:'' %> </h3>
+            <h4 class="position grey"><%- legislators['Speaker']?legislators['Speaker']['constituency']:'' %></h4>
+            <h4 class="position grey"><%- legislators['Speaker']?legislators['Speaker']['position']:'' %></h4>
+          </div>
+          <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6 col-xl-3">
+            <h4>The Legislature</h4>
+            <p >
+              The judicial branch of the state government has sole authority and responsibility for the interpretation and application of the state’s laws as well as the adjudication of disputes or controversies. It consists of eight courts: the High Court of Justice, the Magistrates Courts, the Customary Courts, the Juveniles Courts, the Revenue Courts, the Sanitation Courts, the Mobile Courts and Ports Related Offences Courts. It is governed mainly by the Chief Judge of the High Court of Justice.
+              There are about 26 serving judges in the High Court of Justice, which comprises 10 Judicial Divisions including Port Harcourt, Ahoada, Degema, Nchia, Bori, Omoku, Isiokpo, Okrika, Okehi, and Oyigbo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row " style="margin:1%">
+          <div class="col-md-2 col-lg-2"></div>
+          <div class="col-md-10 col-lg-10">
+            <div class="col-md-3 col-xs-6 col-sm-6 col-lg-3 ">
+              <img src="<%- legislators['Deputy Speaker']?legislators['Deputy Speaker']['images'][0]:'' %>" class="img-responsive">
+              <h5 class="names"><%- legislators['Deputy Speaker']?legislators['Deputy Speaker']['name']:'' %></h5>
+              <h4 class="position grey"><%- legislators['Deputy Speaker']?legislators['Deputy Speaker']['position'] :'' %></h4>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6 col-lg-3 ">
+              <img src="<%- legislators['Chief Whip']? legislators['Chief Whip']['images'][0]: '' %>" class="img-responsive">
+              <h5 class="names"><%- legislators['Chief Whip']?legislators['Chief Whip']['name']:'' %></h5>
+              <h4 class="position grey"><%- legislators['Chief Whip']?legislators['Chief Whip']['position']:'' %></h4>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6 col-lg-3 ">
+              <img src="<%- legislators['Majority Leader']?legislators['Majority Leader']['images'][0]:'' %>" class="img-responsive">
+              <h5 class="names"><%- legislators['Majority Leader']?legislators['Majority Leader']['name']:'' %></h5>
+              <h4 class="position grey"><%- legislators['Majority Leader']?legislators['Majority Leader']['position']:'' %></h4>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6 col-lg-3 ">
+              <img src="<%- legislators['Minority Leader']?legislators['Minority Leader']['images'][0]:'' %>" class="img-responsive">
+              <h5 class="names"><%- legislators['Minority Leader']?legislators['Minority Leader']['name']:'' %></h5>
+              <h4 class="position grey"><%- legislators['Minority Leader']?legislators['Minority Leader']['position']:'' %></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style type="text/css">
+      
+    </style>
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 col-md-1"></div>
+          <div class="col-md-11 col-lg-11" style="margin:auto">
+            <h2 style="font-weight: bold;  ">The State Legislature</h2>
+            <h3 style="margin-bottom:3%;  letter-spacing: 0.0005em; font-size: 36px;">House of Assembly Members</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="background: #F2F2F2;">
+        <div class="row">
+          <div class="col-lg-1 col-md-1"></div>
+          <div class="col-lg-11 col-md-11">
+            <div class="row " >
+              <% for(var i = 0; i< legislators['members'].length; i++){ %>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-lg-3 ">
+                  <img src="<%- legislators['members'][i]['images'][0] %>" class="img-responsive">
+                  <h5 class="names">Hon. <%- legislators['members'][i]['name'] %></h5>
+                  <h4 class="position"><%- legislators['members'][i]['constituency'] %></h4>
+                  <h4 class="position"><%- legislators['members'][i]['position']  !== 'none'? legislators['members'][i]['position'] : '' %></h4>
+                </div>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <%- include includes/footer %>
+  </div>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/interface.js"></script> 
+
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Government of Rivers State</title> 
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/img-icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/img-icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/img-icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/img-icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/img-icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/img-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/img-icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/img-icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/img-icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/img-icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/img-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/img-icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/img-icon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="img/img-icon/ms-icon-144x144.png">
+
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700i,700|Poppins:800" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/modifications.css" rel="stylesheet" media="screen">
+<link href="css/xl.css" rel="stylesheet" media="screen">
+</head>
+<body>
+  
+    <!-- Loader -->
+
+    
+    <!-- Header -->
+
+    
+    <%- include includes/header %>
+  <!-- Layout -->
+
+  <div class="layout">
+    
+    <!-- Home -->
+    
+    <main class="main">
+      
+      <style type="text/css">
+        .bgslider{
+          background: linear-gradient(rgba(5, 68, 179, 0.5),rgba(5, 68, 179, 0.5)), url(<%- main_image %>);
+          background-position: center center;
+          height: 100vh;
+          padding-top: 0px;
+          background-size: cover;
+        }
+        .slider-content{
+          font-size:2em;
+          margin-top:60vh;
+          position:absolute;
+        }
+        @media (min-width: 993px){
+          .slider-content{
+            position:absolute;
+            left:10vw;
+          }
+        }
+        @media (max-width: 568px){
+          .bgslider{
+            height: 60vh;
+          }
+          .slider-content{
+            margin-top:25vh;
+            font-size:2em;
+            left:10vw;
+
+          }
+
+          .slider-content h3{
+            font-size:1em;
+          }
+        }
+        @media (max-width: 993px){
+          .slider-content{
+            margin-top:60vh;
+            font-size:2em;
+            left:10vw;
+          }
+        }
+      </style>
+      <!-- Start revolution slider -->
+
+      <section class="bgslider">
+        <div class="container " >
+          <div class="row">
+            <div class="col-md-2 col-lg-2"></div>
+            <div class="col-md-8 col-lg-8 slider-content">
+              <div class="row">
+                <h3 style="color:white; "><%- title %></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Blog List  -->
+    <style type="text/css">
+      .headline{
+        margin:0px;
+        display: inline-block;
+        margin-left: 5%;
+      }
+      .news__authorship p {
+        margin-bottom: 0px;
+      }
+      .news__quick h4 {
+        font-weight: bold;
+      }
+      .news__header h4{
+        font-size:1.2em;
+        font-weight: bold;
+      }
+      .hundred{
+        width:100%;
+      }
+    </style>
+
+    <section class="blog-list section" style="margin-top:3%;  margin-bottom: 1%;">
+      <div class="container" style="margin-bottom: 0%;">
+        <div class="row">
+          <div class=" pull-right" style="display:inline-block">
+            <h4 class="headline" style="font-size:1.5em; margin:20px 0px;">GOVERNMENT HEADLINES</h4>
+          </div>
+        </div>
+      </div>
+      <div class="container news-section" style="background:#F2F2F2; ">
+        <div class="row news__header" >
+          <div class="col-lg-2 col-md-2"></div>
+          <div class="col-lg-8 col-md-8">
+            <h4><%- title %></h4>
+          </div>
+        </div>
+        <div class="row news__quick" >
+          <div class="col-lg-2 col-md-2"></div>
+          <div class="col-lg-8 col-md-8">
+            <h4><%- summary %></h4>
+          </div>
+          <div class="col-lg-2 col-md-2 news__authorship">
+            <hr style="height: 2px; background: #0544A8; ">
+              <p><span class="news__date-published"><%-(new Date(date_published)).toLocaleDateString() %> |<br></span>
+                 <span class="news__publisher">Published By: <br></span>
+                 <span class="news__author"><%- author %></span>
+              </p>
+            <hr style="height: 2px; background: #0544A8; ">
+          </div>
+        </div>
+        <div class="row news__content" >
+          <div class="col-lg-2 col-md-2"></div>
+          <div class="col-lg-8 col-md-8">
+            <%- content %>
+          </div>
+
+        </div>
+        <div class="row news__media">
+          <style type="text/css">
+            .product-holder {
+              position: relative;
+              display: block;
+            }
+
+            .plus-image {
+              left: 45%;
+              top: 35%;
+              position: absolute;
+              width: 10%;
+            }
+          </style>
+          <div class="col-lg-2 col-md-2"></div>
+          <div class="col-lg-10 col-md-10">
+            <div class="row">
+              <% for(var i = 0; i < images_url.length; i++){ %>
+                <div class="col-md-6 col-lg-6 " >
+                  <img src="<%- images_url[i] %>" class="img-responsive hundred" style="margin-right: 0px;">
+                  <img src="img/play.svg"  class="plus-image img-responsive">
+                </div>
+              <% } %>
+            </div>
+          </div>
+        </div>
+        <style type="text/css">
+          .social-share{
+            margin:auto 10px;
+          }
+        </style>
+        <div class="row news__share">
+          <div class="col-lg-1 col-sm-1 col-xs-1 col-md-1">
+          </div>
+          <div class="col-lg-1 col-sm-1 col-xs-2 col-md-1 ">
+            <div class="row pull-left" >
+              <img src="img/news/news_thumbnail.png" class="img-responsive">
+              <h4>PREVIOUS <br> STORY</h4>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-8 col-xs-6 col-md-8 text-center">
+            <p>SHARE: <a class="social-share" href="https://www.facebook.com">Facebook</a>  <a class="social-share" href="https://www.twitter.com">Twitter</a>  <a class="social-share" href="https://www.instagram.com">Instagram</a></p>
+          </div>
+          <div class="col-lg-1 col-sm-1 col-xs-2 col-md-1">
+            <div class="row pull-right" >
+              <img src="img/news/news_thumbnail.png" class="img-responsive">
+              <h4>NEXT <br> STORY</h4>
+            </div>
+          </div>
+          <div class="col-lg-1 col-sm-1 col-xs-1  col-md-1">
+          </div>
+        </div>
+        
+      </div>
+    
+    </section>
+    <hr style="width:80%;  height: 3px; background:#F2F2F2; margin-bottom: 5%; margin-top:0px;  ">
+     <section class="blog-list section" style="#FFFFFF;  padding: 20px; margin-top: -5%;">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-2"></div>
+          <div class="col-lg-10 col-md-10">
+            <div class="row">
+              <div class="col-lg-3 col-md-3"></div>
+              <div class=" col-lg-9 col-md-9" style="display:inline-block; ">
+                <h4  style="color:#0059E6; margin-top:20%;  font-size: 1.5em;">RELATED STORIES</h4>
+              </div>
+            </div>
+            <style type="text/css">
+              .news__header{
+                font-family: 'Poppins', sans-serif;
+                font-size:1.5em;
+                font-weight: bold;
+              }
+              .news__summary {
+                font-family: 'Karla', sans-serif;
+                line-height: 1;
+                margin-top:5%;
+                margin-bottom:0px;
+              }
+              .news__further{
+                margin-top:5px;
+              }
+            </style>
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 news-item ">
+                    <h4 class="news__header">Rural Roads Tarring</h4>
+                    <img src="img/bg/infrastructure.png" class="img-responsive">
+                    <p class="news__summary">With rain beating against our windows, going inside for some physical recreation may be safer than slipping on a sidewalk, even if it involves swords.</p>
+                    <p class="news__further"><a href="/news.html">Read more</a></p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 news-item ">
+                    <h4 class="news__header">Eleme road dualization</h4>
+                    <img src="img/bg/infrastructure.png" class="img-responsive">
+                    <p class="news__summary">With rain beating against our windows, going inside for some physical recreation may be safer than slipping on a sidewalk, even if it involves swords.</p>
+                    <p class="news__further"><a href="/news.html">Read more</a></p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 news-item ">
+                    <h4 class="news__header">Sentiments of Rivers people</h4>
+                    <img src="img/bg/infrastructure.png" class="img-responsive">
+                    <p class="news__summary">With rain beating against our windows, going inside for some physical recreation may be safer than slipping on a sidewalk, even if it involves swords.</p>
+                    <p class="news__further"><a href="/news.html">Read more</a></p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 news-item ">
+                    <h4 class="news__header">Opinions of residents</h4>
+                    <img src="img/bg/infrastructure.png" class="img-responsive">
+                    <p class="news__summary">With rain beating against our windows, going inside for some physical recreation may be safer than slipping on a sidewalk, even if it involves swords.</p>
+                    <p class="news__further"><a href="/news.html">Read more</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <br>
+      </div>
+    </section>
+    
+    <!-- media -->
+    
+
+    <%- include includes/footer %>
+  </div>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS   -->
+
+<script src="js/interface.js"></script> 
+</body>
+</html>

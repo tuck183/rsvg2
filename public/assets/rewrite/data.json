@@ -1,0 +1,138 @@
+[
+	{
+		"id":"1",
+		"latitude":"4.8581",
+		"longitude":"6.9209",
+		"featured":"1",
+		"title":"Dualized Eleme Road",
+		"location":"Onne, Eleme",
+		"city":"1",
+		"website":"https://riversstate.gov.ng",
+		"category":"Roads",
+		"rating":"4",
+		"reviews_number":"6",
+		"marker_image":"assets/img/items/1.jpg",
+		"gallery":[
+			"https://i0.wp.com/leadership.ng/wp-content/uploads/2018/03/7c803609-image.jpeg?w=1080&ssl=1",
+            "https://www.channelstv.com/wp-content/uploads/2017/08/wike3.jpg",
+            "http://scannewsnigeria.com/wp-content/uploads/2017/01/IMG-20170110-WA0012-660x330.jpg"
+		],
+		"tags":[
+			"Roads",
+            "Parking",
+            "Works",
+            "Infrastructure"
+		],
+		"description":"Bearing in mind the importance of a good road network in economic development of any state, the governor is poised towards linking all parts of the state to each other and he is fulfilling his promises by building dualized roads that would be large enough to contain the large amount of motor and human traffic across all parts of the state.",
+		"marker_color":"#000000"
+	},
+	{
+		"id":"2",
+		"latitude":"4.7581",
+		"longitude":"6.8209",
+		"featured":"0",
+		"title":"Okrika Waterside",
+		"location":"Okrika, Rivers State",
+		"city":"1",
+		"website":"https://riversstate.gov.ng",
+		"category":"Infrastructure",
+		"rating":"4",
+		"reviews_number":"6",
+		"marker_image":"assets/img/items/2.jpg",
+		"gallery":[
+			"assets/img/items/2.jpg",
+            "assets/img/items/4.jpg",
+            "assets/img/items/12.jpg"
+		],
+		"tags":[
+			"Roads",
+            "Parking",
+            "Works",
+            "Infrastructure"
+		],
+		"description":"Bearing in mind the importance of a good road network in economic development of any state, the governor is poised towards linking all parts of the state to each other and he is fulfilling his promises by building dualized roads that would be large enough to contain the large amount of motor and human traffic across all parts of the state.",
+		"marker_color":"#000000"
+	},
+	{
+		"id":"4",
+		"latitude":"4.8502",
+		"longitude":"6.9200",
+		"featured":"0",
+		"title":"Mother and Child Hospital",
+		"location":"Okrika, Rivers State",
+		"city":"1",
+		"website":"https://riversstate.gov.ng",
+		"category":"Health",
+		"rating":"4",
+		"reviews_number":"6",
+		"marker_image":"assets/img/items/5.jpg",
+		"gallery":[
+			"https://i2.wp.com/mynaijainfo.com/wp-content/uploads/2018/05/mother-and-child-hospital-port-harcourt-rivers.jpg?w=640&ssl=1",
+            "https://www.nairaland.com/attachments/7184791_33964433102164463061753346069074739580633088n_jpgda70e9b1af42eea73a2cc2d5bdd61840",
+            "https://www.nairaland.com/attachments/7184793_33889404102164463031752597968772734907842560n_jpg19bda869146b0ed26883fd2f45bea1b1"
+		],
+		"tags":[
+			"Maternity",
+            "Health",
+            "Children",
+            "Basics"
+		],
+		"description":"Because of the governor's love for mothers and the need to groom healthy children in the state, he is establishing Mother and Child hospitals across the state",
+		"marker_color":"#c92e2e"
+	},
+	{
+		"id":"3",
+		"latitude":"4.8571",
+		"longitude":"6.9109",
+		"featured":"0",
+		"title":"Aba Road Bridge",
+		"location":"Port Harcourt, Rivers State",
+		"city":"1",
+		"website":"https://riversstate.gov.ng",
+		"category":"Health",
+		"rating":"4",
+		"reviews_number":"6",
+		"marker_image":"assets/img/items/1.jpg",
+		"gallery":[
+			"assets/img/items/1.jpg",
+            "assets/img/items/2.jpg",
+            "assets/img/items/12.jpg"
+		],
+		"tags":[
+			"Roads",
+            "Parking",
+            "Works",
+            "Infrastructure"
+		],
+		"description":"Because of the governor's love for mothers and the need to groom healthy children in the state, he is establishing Mother and Child hospitals across the state",
+		"marker_color":"#000000"
+	},
+	{
+		"id":"5",
+		"latitude":"4.8580",
+		"longitude":"6.9207",
+		"featured":"0",
+		"title":"Etche Dualized Roads",
+		"location":"Etche, Rivers State",
+		"city":"1",
+		"website":"https://riversstate.gov.ng",
+		"category":"Infrastructure",
+		"rating":"4",
+		"reviews_number":"6",
+		"marker_image":"assets/img/items/2.jpg",
+		"gallery":[
+			"https://i0.wp.com/leadership.ng/wp-content/uploads/2018/03/7c803609-image.jpeg?w=1080&ssl=1",
+            "https://www.channelstv.com/wp-content/uploads/2017/08/wike3.jpg",
+            "http://scannewsnigeria.com/wp-content/uploads/2017/01/IMG-20170110-WA0012-660x330.jpg"
+		],
+		"tags":[
+			"Roads",
+            "Parking",
+            "Works",
+            "Infrastructure"
+		],
+		"description":"Bearing in mind the importance of a good road network in economic development of any state, the governor is poised towards linking all parts of the state to each other and he is fulfilling his promises by building dualized roads that would be large enough to contain the large amount of motor and human traffic across all parts of the state.",
+		"marker_color":"#000000"
+	}
+
+]

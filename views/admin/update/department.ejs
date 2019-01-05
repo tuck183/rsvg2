@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard - The Government of Rivers State</title> 
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/img-icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/img-icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/img-icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/img-icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/img-icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/img-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/img-icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/img-icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/img-icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/img-icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/img-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/img-icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/img-icon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="img/img-icon/ms-icon-144x144.png">
+
+<!-- Styles -->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="dashboard/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link href="dashboard/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+<link rel="stylesheet" href="dashboard/assets/libs/css/style.css">
+<link rel="stylesheet" href="dashboard/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    
+</head>
+<body>
+  
+    <%- include ../includes/header %>
+
+    
+  
+  <!-- Layout -->
+
+  <div class="layout">
+    
+    <!-- Home -->
+    
+    <main class="main">
+
+      <style type="text/css">
+        .submit-btn{
+          border-radius:0; 
+          outline:none; 
+          margin-top:20px; 
+          border:1px solid blue; 
+          color:blue;
+        }
+        .main{
+          padding-top:100px;
+        }
+      </style>
+      <div class="content">   
+      
+      <!-- projects -->
+      <div class="dashboard-wrapper">
+            <div class="dashboard-finance">
+                <div class="container-fluid dashboard-content">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h3 class="mb-2">Website Administrators' Dashboard </h3>
+                                <h4 class="mb-2">Ministries Departments </h4>
+                            </div>
+                            <div class="float-right">
+                              <% if(message.length) {%>
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                  <b> <%- message %> </b>
+                                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                              <% } %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                     
+                        <div class="container" >
+                          <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                              <% for(var i = 0; i < departments.length; i++){ %>
+                                <div class="card">
+                                  <h5 class="card-header"><%- departments[i]['name'] %></h5>
+                                  <div class="card-body">
+                                    
+                                  </div>
+                                  <div class="card-header">
+                                     <a class="float-left" href="/edit?id=<%- departments[i]['_id'] %>&type=department"><i class="fas fa-pen"></i>Update</a> <a class="float-right" href="/delete?id=<%- departments[i]['_id'] %>&type=department"><i class="fas fa-trash-alt"></i>Delete</a>
+                                  </div>
+                                </div>
+                              <% } %>
+                            </div>
+                          </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            Copyright © 2018. All rights reserved. Dashboard for Rivers State Government Website. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+     
+      
+      <!-- Footer -->
+      <style type="text/css">
+        .footer{
+          margin-top:0px;
+        }
+        .newsletter{
+          margin-bottom: 5%;
+        }
+      </style>
+
+      <div class="content">   
+      <!-- Footer -->
+        <footer id="footer" style="background: rgb(5,68,168); height:150px; margin-top:0px; margin-bottom:0px; " class="footer">   
+          <div class="container">
+            <div class=" row">
+              <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12  text-center" style="margin-top:50px;">
+                <p style="color:white;">COPYRIGHT © 2018 RIVERS STATE GOVERNMENT. ALL RIGHTS RESERVED.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+
+      <!-- Lines -->
+
+      
+    </div>
+    </main>
+
+    <!-- Blog List  -->
+    
+    
+  </div>
+
+<!-- SCRIPTS -->
+<% include ../includes/footer %>
+
+</body>
+</html>

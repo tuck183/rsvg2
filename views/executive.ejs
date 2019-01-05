@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Government of Rivers State</title> 
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/img-icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/img-icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/img-icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/img-icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/img-icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/img-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/img-icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/img-icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/img-icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/img-icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/img-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/img-icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/img-icon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="img/img-icon/ms-icon-144x144.png">
+
+<!-- Styles -->
+
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700i,700|Poppins:800" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/modifications.css" rel="stylesheet" media="screen">
+<link href="css/xl.css" rel="stylesheet" media="screen">
+</head>
+<body>
+     <!-- Loader -->
+
+    
+    <!-- Header -->
+
+    
+    <%- include includes/header %>
+
+  <!-- Layout -->
+
+  <div class="layout">
+    <style type="text/css">
+      p, h2, h4, h5, h3{
+        margin:auto;
+        padding: auto;
+      }
+      .position{
+        font-family: 'Karla', sans-serif;
+        font-size:1em;
+        word-spacing: 0.1em;
+        font-weight: bold;
+      }
+      .grey{
+        color: #959595;
+      }
+      .names{
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: 18px;
+        margin-top:1%;
+        word-spacing: 0.2em;
+      }
+      .guard{
+        font-size:27px;
+        font-weight: bold;
+      }
+      img{
+        width:100%;
+      }
+      
+    </style>
+    <!-- Home -->
+    <section class="section">
+      <div class="container">
+        <div class="row executiverow">
+          <div class="col-md-2 col-lg-2">
+            
+          </div>
+          <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4 ">
+            <img src="<%- executives['Governor']?executives['Governor']['images'][0]:'' %>" class="img-responsive">
+            <h3 class="guard"><%- executives['Governor']?executives['Governor']['name']:'' %></h3>
+            <h4 class="position grey">Governor</h4>
+          </div>
+          <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6 col-xl-3">
+            <h4>The Executive</h4>
+            <p >
+              The Executive Council, also known as the Governor's Cabinet is the highest administrative decision-making authority in Rivers State. It is part of the executive branch which is the most influential branch of the state government.
+              It comprises of the Governor, Deputy Governor, Secretary to the State Government, Chief of Staff, Commissioners and Special Advisers. All of its members excluding the Deputy Governor are appointed by the Governor of Rivers State and confirmed by the State House of Assembly.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row " style="margin:1%">
+          <div class="col-md-2 col-lg-2"></div>
+          <div class="col-md-10 col-lg-10">
+            <div class="col-md-3 col-xs-6 col-sm-6 col-lg-3 ">
+              <img src="<%- executives['Deputy Governor']?executives['Deputy Governor']['images'][0]:'' %>" class="img-responsive">
+              <h5 class="names"><%- executives['Deputy Governor']?executives['Deputy Governor']['name']:'' %></h5>
+              <h4 class="position grey">Deputy Governor</h4>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6 col-lg-3 ">
+              <img src="<%- executives['Secretary to the State Government']? executives['Secretary to the State Government']['images'][0]: '' %>" class="img-responsive">
+              <h5 class="names"><%- executives['Secretary to the State Government']?executives['Secretary to the State Government']['name']:'' %></h5>
+              <h4 class="position grey">Secretary to the State Government</h4>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6 col-lg-3 ">
+              <img src="<%- executives['Head of Service']?executives['Head of Service']['images'][0]:'' %>" class="img-responsive">
+              <h5 class="names"><%- executives['Head of Service']?executives['Head of Service']['name']:'' %></h5>
+              <h4 class="position grey">Head of Service</h4>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6 col-lg-3 ">
+              <img src="<%- executives['Chief of Staff']?executives['Chief of Staff']['images'][0]:'' %>" class="img-responsive">
+              <h5 class="names"><%- executives['Chief of Staff']?executives['Chief of Staff']['name']:'' %></h5>
+              <h4 class="position grey">Chief of Staff</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style type="text/css">
+      .executiverow{
+        margin-top:2%;
+      }
+    </style>
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 col-md-1"></div>
+          <div class="col-md-11 col-lg-11" style="margin:auto">
+            <h2 style="font-weight: bold;  ">Executive Council Members</h2>
+            <h3 style="margin-bottom:3%;  letter-spacing: 0.0005em; font-size: 36px;">HONORABLE COMMISSIONERS</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="background: #F2F2F2;">
+        <div class="row">
+          <div class="col-lg-1 col-md-1"></div>
+          <div class="col-lg-11 col-md-11">
+            <% for(var x = 0; x < Math.round(executives['Commissioner'].length/4); x++){ %>
+            <div class="row executiverow" >
+            <% for(var i = x*4; i < (x*4) + 4; i++){ %>
+              <% if(!executives['Commissioner'][i]) {%>
+              <% break; %>
+              <% } %>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-lg-3 commissioner">
+                <img src="<%- executives['Commissioner'][i]['images'][0] %>" class="img-responsive">
+                <h5 class="names"><%- executives['Commissioner'][i]['name'].split(' ').splice(0,executives['Commissioner'][i]['name'].split(' ').length-1).join(' ') %></h5>
+                <h5 class="names"><%- executives['Commissioner'][i]['name'].split(' ')[executives['Commissioner'][i]['name'].split(' ').length-1] %></h5>
+                <h4 class="position grey">
+                <% for(var u = 0; u < ministries.length; u++) { %>
+                  <% if(ministries[u]['id'] == executives['Commissioner'][i]['ministry']) {%>
+                    <%- ministries[u]['ministry'] %>
+                    <% break %>
+                  <% } %>
+                <% } %>
+                </h4>
+              </div>
+            <% } %>
+            </div>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <%- include includes/footer %>
+  </div>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/interface.js"></script> 
+
+
+</body>
+</html>

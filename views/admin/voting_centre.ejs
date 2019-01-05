@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard - The Government of Rivers State</title> 
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/img-icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/img-icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/img-icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/img-icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/img-icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/img-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/img-icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/img-icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/img-icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/img-icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/img-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/img-icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/img-icon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="img/img-icon/ms-icon-144x144.png">
+
+<!-- Styles -->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="dashboard/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link href="dashboard/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+<link rel="stylesheet" href="dashboard/assets/libs/css/style.css">
+<link rel="stylesheet" href="dashboard/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    
+</head>
+<body>
+  
+    <%- include includes/header %>
+
+    
+  
+  <!-- Layout -->
+
+  <div class="layout">
+    
+    <!-- Home -->
+    
+    <main class="main">
+
+      <style type="text/css">
+        .submit-btn{
+          border-radius:0; 
+          outline:none; 
+          margin-top:20px; 
+          border:1px solid blue; 
+          color:blue;
+        }
+        .main{
+          padding-top:100px;
+        }
+      </style>
+      <div class="content">   
+      
+      <!-- projects -->
+      <div class="dashboard-wrapper">
+            <div class="dashboard-finance">
+                <div class="container-fluid dashboard-content">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h3 class="mb-2">Website Administrators' Dashboard </h3>
+                            </div>
+                            <div class="float-right">
+                              <% if(message.length) {%>
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                  <b> <%- message %> </b>
+                                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                              <% } %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                     <div class="container" >
+                          <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                              <div class="card">
+                                <h5 class="card-header">Voting centre Information </h5>
+                                <div class="card-body">
+                                  <form action="/voting_centre" method="post">
+                                    <div class="form-group">
+                                        <label for="address" >Address of voting centre</label>
+                                        <br>
+                                        <input type="text" class="form-control" name="address" id="address" placeholder="Please input the address of a voting centre" />
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="lga">Local Government Area of voting centre</label>
+                                        <select class="form-control" name="lga" id="lga">
+                                            <option value="Isiokpo">Isiokpo</option>
+                                            <option value="Port Harcourt">Port Harcourt</option>
+                                            <option value="Obio Akpor">Obio Akpor</option>
+                                            <option value="Tai">Tai</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ward">Ward of voting centre</label>
+                                        <select class="form-control" name="ward" id="ward">
+                                            <option value="Isiokpo">Isiokpo</option>
+                                            <option value="Port Harcourt">Port Harcourt</option>
+                                            <option value="Obio Akpor">Obio Akpor</option>
+                                            <option value="Tai">Tai</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="description">Description of voting centre</label>
+                                      <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="images" >Image URLs of voting centre</label>
+                                        <br>
+                                        <input type="text" class="form-control" name="images" id="images" placeholder="Add at least 3 comma-separated URLs of voting centre images" />
+                                    </div>
+                                    <button type="submit" class="btn submit-btn btn-primary">Submit</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            Copyright © 2018. All rights reserved. Dashboard for Rivers State Government Website. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+     
+      
+        
+
+      <!-- Lines -->
+
+      
+    </div>
+    </main>
+
+    <!-- Blog List  -->
+    
+    
+  </div>
+
+<!-- SCRIPTS -->
+<% include includes/footer %>
+
+</body>
+</html>

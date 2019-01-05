@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Government of Rivers State</title> 
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/img-icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/img-icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/img-icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/img-icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/img-icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/img-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/img-icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/img-icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/img-icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/img-icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/img-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/img-icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/img-icon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="img/img-icon/ms-icon-144x144.png">
+
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700i,700|Poppins:800" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/modifications.css" rel="stylesheet" media="screen">
+<link href="css/xl.css" rel="stylesheet" media="screen">
+</head>
+<body>
+  
+    <!-- Loader -->
+
+    
+
+    
+    
+    <%- include includes/header %>
+  <!-- Layout -->
+
+  <div class="layout" style="background: rgb(5,68,168);">
+    <style type="text/css">
+      h4,h3{
+        color:white;
+        
+      }
+      p{
+        color:white;
+        margin:0;
+        word-spacing: 0.3em;
+        line-height: 1.1;
+        font-weight: bold;
+      }
+      .dept{
+        color:rgb(0,177,230);
+      }
+      .ministry{
+        font-family: 'Karla', sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 0px;
+        margin-top:2%;
+      }
+      hr{
+        margin-top:5%;
+        box-sizing: border-box;
+      }
+      .departments p, .affiliates p{
+        font-size: 0.9em;
+        word-spacing: 0em;
+        font-weight: 700;
+      }
+      .affiliates p{
+        font-weight: 400;
+      }
+      .departments{
+        margin-bottom: 5%;
+      }
+      @media (max-width:993px){
+        .section{
+          margin-top:10%;
+        }
+      }
+      @media (min-width:994px){
+        .section{
+          margin-top:5%
+        }
+      }
+      .video__content{
+        background: white;
+        height: 90vh;
+        padding-top:30px;
+      }
+      .video__bg{
+        background: #0544A8;
+        height: 90vh;
+      }
+      .horizontal-bar{
+        border-bottom: 2px solid #0544A8;
+        display: inline-block;
+        width:10%;
+        margin-bottom:7px;
+      }
+      .video__content h3, .video__content p, .video__content h2{
+        color:#0544A8;
+        font-size:3em;
+      }
+      .video__content p{
+        font-weight: 400;
+        font-size:1em;
+      }
+      @media (max-width: 993px){
+        .vertical-bar{
+          display:none;
+        }
+        .video__content{
+          height: auto;
+        }
+      }
+      #myVideo {
+          min-width: 100%; 
+          max-height: 90vh;
+      }
+      .movers{
+        background:white;
+        padding:5px 15px;
+      }
+    </style>
+    <!-- Home -->
+    <section class="section" >
+      <div class="row video">
+        <div class="col-md-6 col-lg-6 col-sm-12 video__bg">
+          <video controls autoplay muted loop id="myVideo" >
+            <source id="ministry-video" src="img/videos/agric.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-12 video__content">
+          <div class="row" style="padding:5%">
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-md-10 col-sm-12 col-xs-12 col-lg-10">
+              <h2 id="ministry-index">02</h2>
+              <h3 id="ministry">Agriculture</h3>
+              <span><hr class="horizontal-bar"> <p style="color:#0544A8; display: inline-block; margin-top:-5%; font-weight: bold; margin-left:3%;" id="ministry-title" > Farmers empowerment scheme</p></span>
+              <p id="ministry-description">New projects being embarked on everyday to empower farmers to be their best and as well drive food sufficiency within the state. Watch as farmers implement new farming methods with new technologies and techniques taught them in their training sessions. They are earning more and the state is better off for all of these.</p>
+            </div>
+          </div>
+          <div class="row" style="margin-left:13%;">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 " style="padding-right:0px;width:40px; ">
+              <a data-index="0" id="backward" class="btn movers movers-forward pull-right" style="border:2px solid #0544A8; outline:none;"><i style="color:#0544A8;" data-index="0" class="fa fa-2x fa-angle-left"></i></a>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 " style="padding-left: 0px;width:40px; ">
+              <a data-index="2" id="forward" class="btn movers  pull-left" style="border:2px solid #0544A8; outline:none;"><i style="color:#0544A8;" data-index="2" class="fa fa-2x fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section  >
+      <div class="container">
+        <% for (var i = 0; i < ministries.length; i++){ %>
+          
+          <div class="row">
+            <div class="col-lg-2 col-md-2" ></div>
+            <div class="col-lg-10 col-md-10">
+
+              <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+                  <h4 class="ministry">Ministry of <%- ministries[i]['ministry'] %> </h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 ">
+                  <h4 class="dept">DEPARTMENTS</h4>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6 ">
+                  <h4 class="dept">AFFILIATED AGENCIES</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 departments col-sm-6 col-xs-6 ">
+                  <% for(var u = 0; u< departments.length; u++) {%>
+                    <% if(departments[u] && departments[u]['ministryId'] == ministries[i]['_id']) {%>
+                      <p><%- ministries[i]['departments'][u] %></p>
+                    <% } %>
+                  <% } %>
+                  <p style=" font-size:1em;">For more information, visit: <a href="/ministry?id=<%- ministries[i]['_id'] %>" style="color:rgb(0,177,230);">Ministry page</a></p>
+                </div>
+                <div class="col-lg-6 col-md-6 affiliates col-sm-6 col-xs-6 ">
+                  <% for(var x = 0; x< ['agencies'].length; x++) {%>
+                    <% if(agencies[x] && agencies[x]['ministryId'] == ministries[i]['_id']) {%>
+                      <p><%- ministries[i]['agencies'][x] %></p>
+                    <% } %>
+                  <% } %>
+                </div>
+                <hr style="height: 2px; width: 100%;  background:white;   ">
+              </div>
+            </div>
+          </div>
+        <% } %>
+      </div>
+    </section>
+
+    
+
+
+    <%- include includes/footer %>
+  </div>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/interface.js"></script> 
+
+<script type="text/javascript">
+  var ministries_information = [
+      {
+        "ministry":"Information",
+        "title":"Positive projection of the state",
+        "description":"New projects being embarked on everyday to empower farmers to be their best and as well drive food sufficiency within the state. Watch as farmers implement new farming methods with new technologies and techniques taught them in their training sessions. They are earning more and the state is better off for all of these",
+        "vertical":"POWER FOR LIFE",
+        "link":"img/videos/internal.mp4"
+      },
+      {
+        "ministry":"Agriculture",
+        "title":"Rural Farmers Empowerment Scheme",
+        "description":"New projects being embarked on everyday to empower farmers to be their best and as well drive food sufficiency within the state. Watch as farmers implement new farming methods with new technologies and techniques taught them in their training sessions. They are earning more and the state is better off for all of these",
+        "vertical":"GIANT STRIDES",
+        "link":"img/videos/agric.mp4"
+      },
+      {
+        "ministry":"Education",
+        "title":"Basic Education Initiative",
+        "description":"New projects being embarked on everyday to empower farmers to be their best and as well drive food sufficiency within the state. Watch as farmers implement new farming methods with new technologies and techniques taught them in their training sessions. They are earning more and the state is better off for all of these",
+        "vertical":"OUR FUTURE",
+        "link":"img/videos/info.mp4"
+      }
+  ]
+  var movers = document.getElementsByClassName('movers');
+  for (var i = 0; i < movers.length; i++){
+    movers[i].addEventListener('click',function(e){
+      var index = Number(e.target.dataset.index)
+      var ministry_video = document.getElementById("ministry-video")
+      var video = document.getElementById("myVideo")
+      if(index == ministries_information.length - 1){
+        var forward_index = ministries_information.length-1 - index;
+        var backward_index = index-1;
+        document.getElementById("forward").dataset.index = forward_index;
+        document.getElementById("backward").dataset.index = backward_index;
+        document.getElementById("forward").firstChild.dataset.index = forward_index;
+        document.getElementById("backward").firstChild.dataset.index = backward_index;
+      }
+      else if(index == 0){
+        var forward_index = index + 1;
+        var backward_index = ministries_information.length-1 - index;;
+        document.getElementById("forward").dataset.index = forward_index;
+        document.getElementById("backward").dataset.index = backward_index;
+        document.getElementById("forward").firstChild.dataset.index = forward_index;
+        document.getElementById("backward").firstChild.dataset.index = backward_index;
+      }
+      else{
+        document.getElementById("forward").dataset.index = index + 1;
+        document.getElementById("backward").dataset.index = index-1;
+        document.getElementById("forward").firstChild.dataset.index = index + 1;
+        document.getElementById("backward").firstChild.dataset.index = index - 1;
+      }
+      document.getElementById("ministry-index").innerHTML = "0"+(index+1);
+      document.getElementById("ministry").innerHTML = ministries_information[index]["ministry"];
+      document.getElementById("ministry-description").innerHTML = ministries_information[index]["description"];
+      document.getElementById("ministry-title").innerHTML = ministries_information[index]["title"];
+      console.log(ministry_video);
+      ministry_video.src = ministries_information[index]["link"];
+      video.pause();
+      video.load();
+      video.play();
+    })
+  }
+</script>
+
+</body>
+</html>

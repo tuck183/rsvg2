@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4312 1129 97 46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0544a8;
+        font-size: 24px;
+        font-family: HelveticaNeue-Bold, Helvetica Neue;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-family: HelveticaNeue-Thin, Helvetica Neue;
+        font-weight: 200;
+      }
+    </style>
+  </defs>
+  <text id="LATEST_NEWS" data-name="LATEST 
+NEWS" class="cls-1" transform="translate(4312 1147)"><tspan x="0" y="0">LATEST </tspan><tspan class="cls-2"><tspan x="0" y="24">NEWS</tspan></tspan></text>
+</svg>

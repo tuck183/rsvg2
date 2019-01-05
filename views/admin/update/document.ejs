@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Government of Rivers State</title> 
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/img-icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/img-icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/img-icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/img-icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/img-icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/img-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/img-icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/img-icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/img-icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/img-icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/img-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/img-icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/img-icon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="img/img-icon/ms-icon-144x144.png">
+
+<!-- Styles -->
+
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700i,700|Poppins:800" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/modifications.css" rel="stylesheet" media="screen">
+<link href="css/xl.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+     <!-- Loader -->
+
+    
+    <!-- Header -->
+
+     <%- include ../includes/header %>
+
+  <!-- Layout -->
+
+  <div class="layout">
+    <style type="text/css">
+      p, h2, h4, h5, h3{
+        margin:auto;
+        padding: auto;
+      }
+      .position{
+        font-family: 'Karla', sans-serif;
+        font-size:1em;
+        word-spacing: 0.1em;
+        font-weight: bold;
+      }
+      .grey{
+        color: #959595;
+      }
+      .names{
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: 18px;
+        margin-top:1%;
+        word-spacing: 0.2em;
+      }
+      .guard{
+        font-size:27px;
+        font-weight: bold;
+      }
+      img{
+        width:100%;
+      }
+    </style>
+    <!-- Home -->
+    <section class="section">
+      <div class="container">
+        <div class="row executiverow">
+          <div class="col-md-2 col-lg-2">
+            
+          </div>
+          <div class="col-md-10 col-xs-12 col-sm-12 col-lg-10 col-xl-10">
+            <h4>Documents on the platform</h4>
+            <p >
+              Editing tools to manage the documents on the platform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style type="text/css">
+      .executiverow{
+        margin:3%;
+      }
+    </style>
+    <section class="section">
+      <% for(var category in documents) {%>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-md-11 col-lg-11" style="margin:auto">
+              <h2 style="font-weight:bold;" ><%- category %> documents</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="container" style="background: #F2F2F2;">
+          <div class="row">
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-11 col-md-11">
+              <div class="row executiverow" >
+                <% for (var i = 0; i < documents[category].length; i++){ %>
+                  <div class="col-md-3 col-sm-6 col-xs-6 col-lg-3 ">
+                    <h5 class="names"><%- documents[category][i]['title'] %></h5>
+                    <div class="row">
+                      <br>
+                      <div class="col-md-12 col-sm-12 col-lg-12">
+                      <a class="pull-left link" data-link="https://s3.us-east-1.amazonaws.com/phrivers/<%- documents[category][i]['type'] %>/<%- documents[category][i]['url'] %>" href="#"><i class="fas fa-copy"></i>Copy URL</a>
+                      <a class="pull-right" href="/delete?id=<%- documents[category][i]['_id'] %>&type=media&sub=documents"><i class="fas fa-trash-alt"></i>Delete</a>
+                      </div>
+                    </div>
+                  </div>
+                <% } %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% } %>
+    </section>
+
+
+    <div class="content">   
+      <!-- Footer -->
+      <footer id="footer" style="background: rgb(5,68,168); height:150px; margin-top:0px; margin-bottom:0px; " class="footer">   
+        <div class="container">
+          <div class=" row">
+            <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 2 text-center" style="margin-top:50px;">
+              <p style="color:white;">COPYRIGHT © 2018 RIVERS STATE GOVERNMENT. ALL RIGHTS RESERVED.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+<!-- SCRIPTS -->
+<script type="text/javascript">
+  var image_links = document.getElementsByClassName('link');
+  for(var i = 0; i < image_links.length; i++){
+    image_links[i].addEventListener('click',function(e){
+      e.preventDefault();
+      var image_link = e.target.dataset.link;
+      var textarea = document.createElement('textarea');
+      textarea.textContent = image_link;
+      document.body.appendChild(textarea);
+
+      var selection = document.getSelection();
+      var range = document.createRange();
+      range.selectNode(textarea);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      console.log('copy success', document.execCommand('copy'));
+      selection.removeAllRanges();
+      document.body.removeChild(textarea);
+    })
+  }
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/interface.js"></script> 
+
+
+</body>
+</html>

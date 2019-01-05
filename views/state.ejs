@@ -1,0 +1,410 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Government of Rivers State</title> 
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/img-icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/img-icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/img-icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/img-icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/img-icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/img-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/img-icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/img-icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/img-icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/img-icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/img-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/img-icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/img-icon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="img/img-icon/ms-icon-144x144.png">
+
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700i,700|Poppins:800" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/modifications.css" rel="stylesheet" media="screen">
+<link href="css/xl.css" rel="stylesheet" media="screen">
+</head>
+<body>
+  
+    <!-- Loader -->
+
+    
+    <!-- Header -->
+
+    
+    <%- include includes/header %>
+
+  <!-- Layout -->
+
+  <div class="layout">
+    
+    <!-- Home -->
+    
+    <main class="main">
+
+      <style type="text/css">
+        #myVideo {
+          right: 0;
+          bottom: 0;
+          min-width: 100vw; 
+          max-height: 100vh;
+      }
+      .video__description {
+          position: absolute;
+          top:60vh;
+          bottom: 0;
+          color: #f1f1f1;
+          width: 100%;
+          padding: 20px;
+      }
+      @media (min-width:993px){
+        .video__description{
+          left:10vw;
+        }
+      }
+      </style>
+      <!-- Start revolution slider -->
+
+      <section>
+        <video autoplay muted loop id="myVideo">
+          <source src="img/videos/nafest.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+          <div class="row">
+            <div class="video__description">
+              <h1 style="color:white">ONE PEOPLE, ONE VOICE</h1>
+              <p style="color:white; font-size:2em;">A people with a diverse heritage</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <style type="text/css">
+      .state-profile--blue{
+        background: #0544A8;
+      }
+      .state-profile--green{
+        background: #557431;
+      }
+      .state__body h3, .state__body p{
+        color:white;
+      }
+      .slider{
+        background: white;
+        width: 200px;
+        height: 200px;
+        float:right;
+        position:relative;
+        top:-10vh;
+        left:5vh;
+      } 
+      .sector, .overview{
+        margin-top:-5%;
+      }
+      @media (min-width: 3200px){
+        .sector, .overview{
+          margin-top:-3%;
+        }
+      }
+      @media (max-width: 568px){
+        .info-section{
+          position:absolute;
+          top:35vh
+          margin-bottom:50px;
+        }
+      }
+      @media (max-width: 993px){
+        .sector, .overview{
+          margin-top:0px;
+        }
+      }
+
+      .slider-box{
+        margin-top:30%;
+      }
+      .slider__front, .slider__back{
+        border:2px solid #0544A8 ;
+        display:inline-block;
+        margin-right:0px;
+        margin-left:0px;
+        padding:auto;
+        cursor: pointer;
+      }
+      .slider__social{
+        margin-top:20%;
+      }
+      .vertical-line{
+        border-left:2px solid white;
+        height:75px;
+        margin:0px;
+      }
+      .number{
+        font-weight: bold;
+      }
+      .lead{
+        color:white;
+        margin:0;
+        cursor:pointer;
+        font-size:1em;
+      }
+      
+      .slider--agriculture .slider__front, .slider--agriculture .slider__back{
+        border:2px solid #557431;
+      }
+      
+      p a i{
+        margin:auto 5px;
+      }
+      .sliders{
+        width:40px;
+        height: 30px;
+      }
+      .overview_back, .overview_front, .sector_front, .sector_back{
+        margin-top:-3px;
+      }
+      @media (max-width: 768px){
+        .overview_back, .overview_front, .sector_front, .sector_back{
+          margin-top:0px;
+        }
+      }
+      
+    </style>
+    
+    <section class="blog-list section state-profile state-profile--blue" style="padding-top:3%; padding-bottom:3%; margin-top:0px; margin-bottom: 0px;">
+      <div class="container" style="margin-bottom: 0%;">
+        <div class="row">
+          <div class="col-lg-2 col-sm-2 col-md-2 "></div>
+          <div class="col-lg-8 col-sm-8 col-md-8 ">
+            <img id="overview-images" src="img/state/culture/aerial2.jpg" data-state="1" style="width:100%;" data-index="1" class="img-responsive">
+            <div class="slider text-center slider--overview ">
+              <div class="slider-box">
+                <div class="sliders overview slider__back overview_back " data-display="overview" data-index="1" data-state="0">
+                  <i style=" " class="fa fa-angle-left fa-2x overview_back" data-display="overview" data-index="1"  data-state="0"></i>
+                </div>
+                <div class="sliders overview slider__front overview_front " data-display="overview" data-index="1"  data-state="2">
+                  <i style="" class="fa fa-angle-right fa-2x overview_front" data-display="overview" data-index="1"  data-state="2"></i>
+                </div>
+              </div>
+              <p class="slider__social" style="color:#0544A8;">SHARE:   
+                <a href="https://www.facebook.com"><i class="fa fa-facebook "></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter "></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram "></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-xs-6 col-sm-2 col-md-2  info-section">
+              <p data-index="1" data-display="overview" class="lead"><span class="number">01</span> Overview</p>
+              <div class="vertical-line"></div>
+              <p data-index="2" data-display="overview" class="lead"><span class="number">02</span> History</p>
+              <div class="vertical-line"></div>
+              <p data-index="3" data-display="overview" class="lead"><span class="number">03</span> People</p>
+          </div>
+          <div class="col-lg-1 col-xs-6 col-sm-1 col-md-1 col-xl-1">
+            
+          </div>
+        </div>
+        <div class="row state__body">
+          <div class="col-lg-2 col-md-2"></div>
+          <div class="col-lg-8 col-md-8 overview">
+            <h3 id="overview-title">OVERVIEW</h3>
+            <p id="overview-description">
+              Rivers State, also known simply as Rivers, is one of the 36 states of Nigeria. According to census data released in 2006, the state has a population of 5,185,400, making it the sixth-most populous state in the country. Its capital, Port Harcourt is the largest city and is economically significant as the centre of Nigeria’s oil industry. Rivers State is bounded on the South by the Atlantic Ocean, to the North by Imo, Abia and Anambra States, to the East by Akwa Ibom State and to the West by Bayelsa and Delta states. It is home to many indigenous ethnic groups: Ikwerre, Ibani, Opobo, Eleme, Okrika, and Kalabari, Etche, Ogba, Ogoni, Engenni and others. The people from Rivers State are known as “Riverians”.The inland part of the state consists of tropical rainforest; towards the coast the typical Niger Delta environment features many mangrove swamps. Rivers state, named after the many rivers that border its territory, was part of the Oil Rivers Protectorate from 1885 till 1893, when it became part of the Niger Coast Protectorate. In 1900 the region was merged with the chartered territories of the Royal Niger Company to form the colony of Southern Nigeria. The state was formed in 1967 with the split of the Eastern Region of Nigeria. Until 1996 the state contained the area now known as Bayelsa State.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog-list section state-profile state-profile--green" style="padding-top:3%; padding-bottom:3%; margin-bottom:0px; margin-top:0px;">
+      <div class="container" style="margin-bottom: 0%;">
+        <div class="row">
+          <div class="col-lg-2 col-sm-2 col-md-2 "></div>
+          <div class="col-lg-8 col-sm-8 col-md-8 ">
+            <img id="sector-images" src="img/state/agric/pepper.jpg" style="width:100%" data-state="1" data-index="4" class="img-responsive">
+            <div class="slider text-center slider--agriculture">
+              <div class="slider-box">
+                <div class="sliders sector slider__back sector_back" data-button="-1" data-display="sector" data-index="3"  data-state="0">
+                  <i style="color:#557431; " class="fa fa-angle-left fa-2x sector_back" data-button="-1" data-display="sector" data-index="3"  data-state="0"></i>
+                </div>
+                <div class="sliders sector slider__front sector_front "  data-button="1" data-display="sector" data-index="3"  data-state="2">
+                  <i style="color:#557431; " class="fa fa-angle-right fa-2x sector_front" data-button="1"  data-display="sector" data-index="3"  data-state="2"></i>
+                </div>
+              </div>
+              <p class="slider__social" style="color:#557431">SHARE:   
+                <a href="https://www.facebook.com"><i style="color:#557431;" class="fa fa-facebook "></i></a>
+                <a href="https://www.twitter.com"><i style="color:#557431;" class="fa fa-twitter "></i></a>
+                <a href="https://www.instagram.com"><i style="color:#557431;" class="fa fa-instagram "></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-xs-6 col-sm-2 col-md-2 info-section" >
+            <p data-index="4" data-display="sector" class="lead"><span class="number">04</span> Agriculture</p>
+            <div class="vertical-line"></div>
+            <p data-index="5" data-display="sector" class="lead"><span class="number">05</span> Education</p>
+            <div class="vertical-line"></div>
+            <p data-index="6" data-display="sector" class="lead"><span class="number">06</span> Natural Resources</p>
+          </div>
+          <div class="col-lg-1 col-xs-6 col-sm-1 col-md-1 col-xl-1">
+            
+          </div>
+        </div>
+        <div class="row state__body">
+          <div class="col-lg-2 col-sm-2 col-md-2 "></div>
+          <div class="col-lg-8 col-sm-8 col-md-8 sector">
+            <h3 id="sector-title">AGRICULTURE</h3>
+            <p id="sector-description">
+              Rivers State, also known simply as Rivers, is one of the 36 states of Nigeria. According to census data released in 2006, the state has a population of 5,185,400, making it the sixth-most populous state in the country. Its capital, Port Harcourt is the largest city and is economically significant as the centre of Nigeria’s oil industry. Rivers State is bounded on the South by the Atlantic Ocean, to the North by Imo, Abia and Anambra States, to the East by Akwa Ibom State and to the West by Bayelsa and Delta states. It is home to many indigenous ethnic groups: Ikwerre, Ibani, Opobo, Eleme, Okrika, and Kalabari, Etche, Ogba, Ogoni, Engenni and others. The people from Rivers State are known as “Riverians”.The inland part of the state consists of tropical rainforest; towards the coast the typical Niger Delta environment features many mangrove swamps. Rivers state, named after the many rivers that border its territory, was part of the Oil Rivers Protectorate from 1885 till 1893, when it became part of the Niger Coast Protectorate. In 1900 the region was merged with the chartered territories of the Royal Niger Company to form the colony of Southern Nigeria. The state was formed in 1967 with the split of the Eastern Region of Nigeria. Until 1996 the state contained the area now known as Bayelsa State.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include includes/footer %>
+  </div>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/interface.js"></script> 
+
+<script type="text/javascript">
+  var info = [
+    {
+      "name":"overview",
+      "images":["img/state/culture/diversity.jpg","img/state/culture/aerial6.jpg","img/state/culture/aerial5.jpg","img/state/culture/aerial7.jpg"],
+      "title":"Overview",
+      "description":"Rivers State, also known simply as Rivers, is one of the 36 states of Nigeria. According to census data released in 2006, the state has a population of 5,185,400, making it the sixth-most populous state in the country. Its capital, Port Harcourt is the largest city and is economically significant as the centre of Nigeria’s oil industry. Rivers State is bounded on the South by the Atlantic Ocean, to the North by Imo, Abia and Anambra States, to the East by Akwa Ibom State and to the West by Bayelsa and Delta states. It is home to many indigenous ethnic groups: Ikwerre, Ibani, Opobo, Eleme, Okrika, and Kalabari, Etche, Ogba, Ogoni, Engenni and others. The people from Rivers State are known as “Riverians”.The inland part of the state consists of tropical rainforest; towards the coast the typical Niger Delta environment features many mangrove swamps. Rivers state, named after the many rivers that border its territory, was part of the Oil Rivers Protectorate from 1885 till 1893, when it became part of the Niger Coast Protectorate. In 1900 the region was merged with the chartered territories of the Royal Niger Company to form the colony of Southern Nigeria. The state was formed in 1967 with the split of the Eastern Region of Nigeria. Until 1996 the state contained the area now known as Bayelsa State."
+    },
+    {
+      "name":"history",
+      "images":["img/state/culture/aerial2.jpg","img/state/culture/aerial3.jpg","img/state/culture/people.jpg","img/state/culture/aerial7.jpg","img/state/culture/aerial1.jpg","img/state/culture/aerial5.jpg","img/state/culture/aerial4.jpg"],
+      "title":"History",
+      "description":"Rivers State, also known simply as Rivers, is one of the 36 states of Nigeria. According to census data released in 2006, the state has a population of 5,185,400, making it the sixth-most populous state in the country. Its capital, Port Harcourt is the largest city and is economically significant as the centre of Nigeria’s oil industry. Rivers State is bounded on the South by the Atlantic Ocean, to the North by Imo, Abia and Anambra States, to the East by Akwa Ibom State and to the West by Bayelsa and Delta states. It is home to many indigenous ethnic groups: Ikwerre, Ibani, Opobo, Eleme, Okrika, and Kalabari, Etche, Ogba, Ogoni, Engenni and others. The people from Rivers State are known as “Riverians”.The inland part of the state consists of tropical rainforest; towards the coast the typical Niger Delta environment features many mangrove swamps. Rivers state, named after the many rivers that border its territory, was part of the Oil Rivers Protectorate from 1885 till 1893, when it became part of the Niger Coast Protectorate. In 1900 the region was merged with the chartered territories of the Royal Niger Company to form the colony of Southern Nigeria. The state was formed in 1967 with the split of the Eastern Region of Nigeria. Until 1996 the state contained the area now known as Bayelsa State."
+    },
+    {
+      "name":"people",
+      "images":["img/state/culture/aerial2.jpg","img/state/culture/aerial3.jpg","img/state/culture/people.jpg","img/state/culture/aerial7.jpg","img/state/culture/aerial1.jpg","img/state/culture/aerial5.jpg","img/state/culture/aerial4.jpg"],
+      "title":"People",
+      "description":"Rivers State, also known simply as Rivers, is one of the 36 states of Nigeria. According to census data released in 2006, the state has a population of 5,185,400, making it the sixth-most populous state in the country. Its capital, Port Harcourt is the largest city and is economically significant as the centre of Nigeria’s oil industry. Rivers State is bounded on the South by the Atlantic Ocean, to the North by Imo, Abia and Anambra States, to the East by Akwa Ibom State and to the West by Bayelsa and Delta states. It is home to many indigenous ethnic groups: Ikwerre, Ibani, Opobo, Eleme, Okrika, and Kalabari, Etche, Ogba, Ogoni, Engenni and others. The people from Rivers State are known as “Riverians”.The inland part of the state consists of tropical rainforest; towards the coast the typical Niger Delta environment features many mangrove swamps. Rivers state, named after the many rivers that border its territory, was part of the Oil Rivers Protectorate from 1885 till 1893, when it became part of the Niger Coast Protectorate. In 1900 the region was merged with the chartered territories of the Royal Niger Company to form the colony of Southern Nigeria. The state was formed in 1967 with the split of the Eastern Region of Nigeria. Until 1996 the state contained the area now known as Bayelsa State."
+    },
+    {
+      "name":"agriculture",
+      "images":["img/state/agric/pepper.jpg","img/state/agric/cassava.jpg","img/state/agric/produce.jpg","img/state/agric/fowl-pen.jpg","img/state/agric/woman-farmer.jpg","img/state/agric/farmer.jpg","img/state/agric/garden-eggs.jpg"],
+      "title":"Agriculture",
+      "description":"Rivers State, also known simply as Rivers, is one of the 36 states of Nigeria. According to census data released in 2006, the state has a population of 5,185,400, making it the sixth-most populous state in the country. Its capital, Port Harcourt is the largest city and is economically significant as the centre of Nigeria’s oil industry. Rivers State is bounded on the South by the Atlantic Ocean, to the North by Imo, Abia and Anambra States, to the East by Akwa Ibom State and to the West by Bayelsa and Delta states. It is home to many indigenous ethnic groups: Ikwerre, Ibani, Opobo, Eleme, Okrika, and Kalabari, Etche, Ogba, Ogoni, Engenni and others. The people from Rivers State are known as “Riverians”.The inland part of the state consists of tropical rainforest; towards the coast the typical Niger Delta environment features many mangrove swamps. Rivers state, named after the many rivers that border its territory, was part of the Oil Rivers Protectorate from 1885 till 1893, when it became part of the Niger Coast Protectorate. In 1900 the region was merged with the chartered territories of the Royal Niger Company to form the colony of Southern Nigeria. The state was formed in 1967 with the split of the Eastern Region of Nigeria. Until 1996 the state contained the area now known as Bayelsa State."
+    },
+    {
+      "name":"education",
+      "images":["img/state/education/edu3.jpg","img/state/education/edu1.jpg","img/state/education/edu2.jpg","img/state/education/edu4.jpg","img/state/education/edu5.jpg","img/state/education/edu6.jpg"],
+      "title":"Education",
+      "description":"Rivers State, also known simply as Rivers, is one of the 36 states of Nigeria. According to census data released in 2006, the state has a population of 5,185,400, making it the sixth-most populous state in the country. Its capital, Port Harcourt is the largest city and is economically significant as the centre of Nigeria’s oil industry. Rivers State is bounded on the South by the Atlantic Ocean, to the North by Imo, Abia and Anambra States, to the East by Akwa Ibom State and to the West by Bayelsa and Delta states. It is home to many indigenous ethnic groups: Ikwerre, Ibani, Opobo, Eleme, Okrika, and Kalabari, Etche, Ogba, Ogoni, Engenni and others. The people from Rivers State are known as “Riverians”.The inland part of the state consists of tropical rainforest; towards the coast the typical Niger Delta environment features many mangrove swamps. Rivers state, named after the many rivers that border its territory, was part of the Oil Rivers Protectorate from 1885 till 1893, when it became part of the Niger Coast Protectorate. In 1900 the region was merged with the chartered territories of the Royal Niger Company to form the colony of Southern Nigeria. The state was formed in 1967 with the split of the Eastern Region of Nigeria. Until 1996 the state contained the area now known as Bayelsa State."
+    },
+    {
+      "name":"natural_resources",
+      "images":["img/state/education/edu3.jpg","img/state/culture/aerial2.jpg"],
+      "title":"Natural Resources",
+      "description":"Rivers State, also known simply as Rivers, is one of the 36 states of Nigeria. According to census data released in 2006, the state has a population of 5,185,400, making it the sixth-most populous state in the country. Its capital, Port Harcourt is the largest city and is economically significant as the centre of Nigeria’s oil industry. Rivers State is bounded on the South by the Atlantic Ocean, to the North by Imo, Abia and Anambra States, to the East by Akwa Ibom State and to the West by Bayelsa and Delta states. It is home to many indigenous ethnic groups: Ikwerre, Ibani, Opobo, Eleme, Okrika, and Kalabari, Etche, Ogba, Ogoni, Engenni and others. The people from Rivers State are known as “Riverians”.The inland part of the state consists of tropical rainforest; towards the coast the typical Niger Delta environment features many mangrove swamps. Rivers state, named after the many rivers that border its territory, was part of the Oil Rivers Protectorate from 1885 till 1893, when it became part of the Niger Coast Protectorate. In 1900 the region was merged with the chartered territories of the Royal Niger Company to form the colony of Southern Nigeria. The state was formed in 1967 with the split of the Eastern Region of Nigeria. Until 1996 the state contained the area now known as Bayelsa State."
+    }
+
+  ]
+
+  var leads = document.getElementsByClassName("lead");
+  for (var i = 0; i < leads.length; i++){
+    leads[i].addEventListener('click',function(e){
+      var display_pane = e.target.dataset.display;
+      var index = Number(e.target.dataset.index)-1;
+      var title_id = display_pane+"-title";
+      var description_id = display_pane+"-description";
+      var images_id = display_pane+"-images"
+      document.getElementById(title_id).innerHTML = info[index]['title'];
+      document.getElementById(description_id).innerHTML = info[index]['description'];
+      document.getElementById(images_id).src = info[index]['images'][0];
+      var forward_buttons = document.getElementsByClassName("overview_front");
+      var backward_buttons = document.getElementsByClassName("overview_back");
+      for(var u = 0; u < forward_buttons.length; u++){
+        forward_buttons[u].dataset.state =0
+        backward_buttons[u].dataset.state = 2;
+      }
+      var image = document.getElementById(display_pane+'-images');
+      image.dataset.index = index+1;
+      image.dataset.state = 1;
+      image.src = info[index]['images'][1];
+    })
+  }
+
+  var sector = document.getElementsByClassName('sector');
+  for(var i = 0; i < sector.length; i++){
+    sector[i].addEventListener('click',function(e){
+      var sector_image = document.getElementById('sector-images');
+      var info_index = Number(sector_image.dataset.index)-1;
+      var image_state = Number(sector_image.dataset.state);
+      var forward_buttons = document.getElementsByClassName("sector_front");
+      var backward_buttons = document.getElementsByClassName("sector_back");
+      if(e.target.dataset.button == '1'){
+        // right button 
+        var right_state = Number(e.target.dataset.state);
+        for(var u = 0; u < forward_buttons.length; u++){
+          forward_buttons[u].dataset.state =(Number(e.target.dataset.state) == info[info_index]['images'].length - 1)? 0:Number(e.target.dataset.state)+1;
+          backward_buttons[u].dataset.state = image_state;
+        }
+        sector_image.dataset.state = right_state
+        sector_image.src = info[info_index]['images'][Number(right_state)]
+      }
+      else{
+        var left_state = Number(e.target.dataset.state);
+        for(var u = 0; u < forward_buttons.length; u++){
+          backward_buttons[u].dataset.state =(Number(e.target.dataset.state) == 0)? info[info_index]['images'].length - 1:Number(e.target.dataset.state)- 1;
+          forward_buttons[u].dataset.state = image_state;
+        }
+        sector_image.dataset.state = left_state
+        sector_image.src = info[info_index]['images'][Number(left_state)]
+      }
+    })
+  }
+
+  var overview = document.getElementsByClassName('overview');
+  for(var i = 0; i < overview.length; i++){
+    overview[i].addEventListener('click',function(e){
+      var overview_image = document.getElementById('overview-images');
+      var info_index = Number(overview_image.dataset.index)-1;
+      var image_state = Number(overview_image.dataset.state);
+      var forward_buttons = document.getElementsByClassName("overview_front");
+      var backward_buttons = document.getElementsByClassName("overview_back");
+      if(e.target.dataset.button == '1'){
+        // right button 
+        var right_state = Number(e.target.dataset.state);
+        for(var u = 0; u < forward_buttons.length; u++){
+          forward_buttons[u].dataset.state =(Number(e.target.dataset.state) == info[info_index]['images'].length - 1)? 0:Number(e.target.dataset.state)+1;
+          backward_buttons[u].dataset.state = image_state;
+        }
+        overview_image.dataset.state = right_state
+        overview_image.src = info[info_index]['images'][Number(right_state)]
+      }
+      else{
+        var left_state = Number(e.target.dataset.state);
+        for(var u = 0; u < forward_buttons.length; u++){
+          backward_buttons[u].dataset.state =(Number(e.target.dataset.state) == 0)? info[info_index]['images'].length - 1:Number(e.target.dataset.state)- 1;
+          forward_buttons[u].dataset.state = image_state;
+        }
+        overview_image.dataset.state = left_state
+        overview_image.src = info[info_index]['images'][Number(left_state)]
+      }
+    })
+  }
+
+  
+
+  
+</script>
+</body>
+</html>

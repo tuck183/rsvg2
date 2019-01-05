@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard - The Government of Rivers State</title> 
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/img-icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/img-icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/img-icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/img-icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/img-icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/img-icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/img-icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/img-icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/img-icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/img-icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/img-icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/img-icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/img-icon/favicon-16x16.png">
+<meta name="msapplication-TileImage" content="img/img-icon/ms-icon-144x144.png">
+
+<!-- Styles -->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="dashboard/assets/vendor/bootstrap/css/bootstrap.min.css">
+<link href="dashboard/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+<link rel="stylesheet" href="dashboard/assets/libs/css/style.css">
+<link rel="stylesheet" href="dashboard/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    
+</head>
+<body>
+  
+    <%- include ../includes/header %>
+
+    
+  
+  <!-- Layout -->
+
+  <div class="layout">
+    
+    <!-- Home -->
+    
+    <main class="main">
+
+      <style type="text/css">
+        .submit-btn{
+          border-radius:0; 
+          outline:none; 
+          margin-top:20px; 
+          border:1px solid blue; 
+          color:blue;
+        }
+        .main{
+          padding-top:100px;
+        }
+      </style>
+      <div class="content">   
+      
+      <!-- projects -->
+      <div class="dashboard-wrapper">
+            <div class="dashboard-finance">
+                <div class="container-fluid dashboard-content">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h3 class="mb-2">Website Administrators' Dashboard </h3>
+                                <h4 class="mb-2">Ministries Agencies</h4>
+                            </div>
+                            <div class="float-right">
+                              <% if(message.length) {%>
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                  <b> <%- message %> </b>
+                                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                              <% } %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-1 col-md-1"></div>
+                          <div class="col-md-11 col-lg-11" style="margin:auto">
+                            <div class="row image-categories">
+                              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                <h4>Executives Images</h4>
+                                <a class="album" data-category="executive"><i  data-category="executive" class="class fas fa-home fa-5x"></i></a>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                <h4>Judiciary Images</h4>
+                                <a class="album" data-category="judiciary" ><i  data-category="judiciary" class="class fas fa-balance-scale fa-5x"></i></a>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                <h4>Legislature Images</h4>
+                                <a class="album" data-category="legislature" ><i  data-category="legislature" class="album fas fa-gavel fa-5x"></i></a>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                <h4>Traditional Rulers Images</h4>
+                                <a class="album" data-category="traditional ruler" ><i  data-category="traditional ruler" class="album fas fa-couch fa-5x"></i></a>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                <h4>Voting Centres Images</h4>
+                                <a class="album" data-category="voting_centre"><i  data-category="voting_centre" class="fas fa-thumbtack fa-5x album"></i></a>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                <h4>Directors Images</h4>
+                                <a class="album" data-category="directors" ><i  data-category="directors" class="fas fa-users fa-5x album"></i></a>
+                              </div>
+                            </div>
+                            <div class="row image-categories">
+                              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                <h4>Phases Images</h4>
+                                <a class="album" data-category="phases"><i data-category="phases" class="fas album fa-briefcase fa-5x"></i></a>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                <h4>State Images</h4>
+                                <a class="album" data-category="state" ><i  data-category="state" class="fas album fa-flag fa-5x"></i></a>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                <h4>Public Information</h4>
+                                <a class="album" data-category="information" ><i data-category="information" class="fas album fa-bus fa-5x"></i></a>
+                              </div>
+                              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 text-center">
+                                <h4>Projects Images</h4>
+                                <a class="album" data-category="projects" ><i data-category="projects" class="fas album fa-file fa-5x"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-1 col-md-1"></div>
+                          <div class="col-md-11 col-lg-11" style="margin:auto">
+                            <h2 style="font-weight:bold;" ></h2>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="container" style="background: #F2F2F2;">
+                        <div class="row">
+                         <div class="row">
+                              <h4 class="text-center" id="album_category" style="margin-top:3%;"></h4> 
+                            </div>
+                            <div class="row " id="gallery">
+                              
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            Copyright © 2018. All rights reserved. Dashboard for Rivers State Government Website. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+     
+      
+      <!-- Footer -->
+      <style type="text/css">
+        .footer{
+          margin-top:0px;
+        }
+        .newsletter{
+          margin-bottom: 5%;
+        }
+      </style>
+
+      <div class="content">   
+      <!-- Footer -->
+        <footer id="footer" style="background: rgb(5,68,168); height:150px; margin-top:0px; margin-bottom:0px; " class="footer">   
+          <div class="container">
+            <div class=" row">
+              <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12  text-center" style="margin-top:50px;">
+                <p style="color:white;">COPYRIGHT © 2018 RIVERS STATE GOVERNMENT. ALL RIGHTS RESERVED.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+
+      <!-- Lines -->
+
+      
+    </div>
+    </main>
+
+    <!-- Blog List  -->
+    
+    
+  </div>
+
+<!-- SCRIPTS -->
+<% include ../includes/footer %>
+
+<!-- image gallery formating -->
+<script type="text/javascript">
+  var images = <%- JSON.stringify(images) %>;
+  var image_album = document.getElementsByClassName('album');
+  for(var i = 0; i < image_album.length; i++){
+    image_album[i].addEventListener('click',function(e){
+      var album_images = images[e.target.dataset.category]?images[e.target.dataset.category]:[];
+      // we prepare the images for appending to the DOM
+      var images_holder = '';
+      album_images.forEach(function(image){
+        images_holder += `<div class="col-lg-3 col-sm-3 col-md-3 col-6"> <div class="card">
+                                <div class="card-header"><h5 class="names">${image['title']}</h5></div>
+                                <div class="card-body">
+                                  <img src="https://s3.us-east-1.amazonaws.com/phrivers/${image['type']}/${image['url']}" class="img-fluid">
+                                </div>
+                                <div class="card-header">
+                                  <a class="float-left link" data-link="https://s3.us-east-1.amazonaws.com/phrivers/${image['type']}/${image['url']}" href="#"><i class="fas fa-copy"></i>Copy URL</a>
+                                    <a class="float-right" href="/delete?id=${image['_id']}&type=media&sub=image"><i class="fas fa-trash-alt"></i>Delete</a>
+                                </div>
+                                </div>
+                              </div> </div>`
+      })
+      var gallery_viewer = document.getElementById('gallery');
+      gallery_viewer.innerHTML = images_holder;
+      var album_category = document.getElementById('album_category');
+      album_category.innerHTML = e.target.dataset.category.toUpperCase() + ' IMAGES '
+
+      // add event listeners for URL copying
+      var image_links = document.getElementsByClassName('link');
+      for(var i = 0; i < image_links.length; i++){
+        image_links[i].addEventListener('click',function(e){
+          e.preventDefault();
+          var image_link = e.target.dataset.link;
+          var textarea = document.createElement('textarea');
+          textarea.textContent = image_link;
+          document.body.appendChild(textarea);
+
+          var selection = document.getSelection();
+          var range = document.createRange();
+          range.selectNode(textarea);
+          selection.removeAllRanges();
+          selection.addRange(range);
+          console.log('copy success', document.execCommand('copy'));
+          selection.removeAllRanges();
+          document.body.removeChild(textarea);
+        })
+      }
+    })
+  }
+</script>
+</body>
+</html>

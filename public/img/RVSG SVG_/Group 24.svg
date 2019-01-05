@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4582 1003 109 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #0544a8;
+        font-size: 24px;
+        font-family: BebasNeueBold, Bebas Neue;
+      }
+    </style>
+  </defs>
+  <g id="Group_24" data-name="Group 24" transform="translate(3882 -11)">
+    <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-1" width="109" height="32" transform="translate(700 1014)"/>
+    <text id="READ_MORE" data-name="READ MORE" class="cls-2" transform="translate(713 1036)"><tspan x="0" y="0">READ MORE</tspan></text>
+  </g>
+</svg>
