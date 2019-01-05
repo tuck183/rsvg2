@@ -17,7 +17,13 @@
 	color: #fff;
 	text-decoration: none;
 }
-
+.filters .sub-text {
+	font-size: 14px !important;
+	line-height: 1.0em;
+}
+.filters a {
+	font-size: 12px !important;
+}
 .page-anchor:hover {
 	border: 1px solid #cccccc;
 	color: #ccc;
@@ -250,6 +256,16 @@ Font weight
 .fs-8 {
 	font-size: 0.8em;
 }
+.fs-9 {
+	font-size: 0.9em;
+}
+.fs-10 {
+	font-size: 1em;
+}
+.ls-8 {
+	line-height: 0.8em;
+}
+
 /*
 Font color
 */
